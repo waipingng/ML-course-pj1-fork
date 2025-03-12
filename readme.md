@@ -1,10 +1,10 @@
 # Investigating the Relationship between Demographic Factors and Heart Disease Mortality
 
-## 1. Problem Statement
+## Goal of the project
 
 This analysis investigates the relationship between demographic characteristicsâ€”specifically median income, ethnicity, and gender distributionsâ€”and heart disease mortality rates at the county level. Understanding these relationships can guide targeted public health interventions aimed at reducing heart disease-related mortality.
 
-## 2. Data Sources
+## Sources of the data
 
 ### Primary Data Sources:
 - **U.S. Census Bureau**
@@ -15,7 +15,6 @@ This analysis investigates the relationship between demographic characteristicsâ
   - Link: [wXXX](XXX)
   - Provides age-adjusted heart disease mortality rates at the county level.
 
-## 2.1 Data Collection and Documentation
 
 ### Data Collection Methods:
 - Demographic data sourced from the U.S. Census Bureau, primarily using decennial census data supplemented by the American Community Survey (ACS).
@@ -42,11 +41,10 @@ This analysis investigates the relationship between demographic characteristicsâ
 - run randomforest model: python code/randomforest_bestparameters.py
 - run other models and compare the predictions: python code/pred.py
 
-## 2.2 Modeling Approaches
+## Modeling Approaches
 
 ### Models Explored:
 - **Linear Regression:** A baseline approach assuming linear relationships.
-- **Decision Tree Regression:** Captures non-linear relationships but risks overfitting.
 - **Random Forest Regression:** Robust to non-linearities and interactions between demographic features.
 - **Stochastic Gradient Descent (SGD)** regression.
 - **Support Vector Regression (SVR)**.
@@ -58,7 +56,7 @@ This analysis investigates the relationship between demographic characteristicsâ
 
 Models evaluated using 10-fold cross-validation to prevent overfitting.
 
-## 3. Evaluation Results
+### Evaluation Results
 
 | Model                      | RMSE (lower is better) | RÂ² (higher is better) |
 |-----------------------------|-------------------------|-------------------------------|
@@ -75,7 +73,7 @@ Models evaluated using 10-fold cross-validation to prevent overfitting.
 - Tree-based models, while performing well, may present interpretability challenges.
 - The neural network's complexity and potential overfitting were concerns given limited interpretability.
 
-## 4. Recommendations
+## Futher Research
 
 ### Recommended Model:
 - **Random Forest Regression** is recommended due to the best overall balance between predictive accuracy (lowest RMSE and high RÂ² score) and interpretability, making it suitable for practical application in public health policy formulation.
@@ -84,9 +82,8 @@ Models evaluated using 10-fold cross-validation to prevent overfitting.
 - Integrate additional demographic and socioeconomic data (e.g., education levels, employment status, healthcare access).
 - Perform analysis at finer resolutions (e.g., zip code level) to refine public health targeting and interventions.
 
----
 
-### Appendix (Separate Document):
+## Appendix (Separate Document):
 - Exploratory Data Analysis (EDA)
 - Detailed supplementary plots
 - Additional explored variables not central to primary analysis findings
