@@ -9,7 +9,7 @@ This analysis investigates the relationship between demographic characteristicsâ
 ### Primary Data Sources:
 - **U.S. Census Bureau**
   - Link: [census.gov](https://www.census.gov/)
-  - Provides detailed demographic data (income, ethnicity, gender) by county.
+  - Provides detailed demographic income data by county.
 
 - **Heart Motality Data**
   - Link: [wXXX](XXX)
@@ -61,10 +61,10 @@ This analysis investigates the relationship between demographic characteristicsâ
 |-----------------------------|-------------------------|-------------------------------|
 | Linear Regression             | High (~100)           | ~0.55 |
 | Decision Tree Regression     | Moderate RMSE, ~80       | Moderate RÂ², ~0.6            |
-| Random Forest                | **Lowest RMSE**          | High RÂ², ~0.7                |
+| Random Forest                | 99.66         | 0.6017               |
 | SGD Regression               | 93.15                | 0.6626                       |
 | SVR                          | 125.73            | 0.3852           |
-| Neural Network (MLP)         | 81.12    | 0.7441           |
+| Neural Network (MLP)         | **81.12**    | **0.7441**           |
 
 ## 3.1 Limitations of Modeling
 
@@ -75,16 +75,10 @@ This analysis investigates the relationship between demographic characteristicsâ
 ## Futher Research
 
 ### Recommended Model:
-- **Random Forest Regression** is recommended due to the best overall balance between predictive accuracy (lowest RMSE and high RÂ² score) and interpretability, making it suitable for practical application in public health policy formulation.
+- **Neural Network** is recommended due to the best overall balance between predictive accuracy (lowest RMSE and high RÂ² score) and interpretability, making it suitable for practical application in public health policy formulation.
 
 ### Recommendations for Future Analysis:
 - Integrate additional demographic and socioeconomic data (e.g., education levels, employment status, healthcare access).
 - Perform analysis at finer resolutions (e.g., zip code level) to refine public health targeting and interventions.
 
-
-
-## Appendix (Separate Document):
-- Exploratory Data Analysis (EDA)
-- Detailed supplementary plots
-- Additional explored variables not central to primary analysis findings
 
