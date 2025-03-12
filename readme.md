@@ -48,15 +48,14 @@ This analysis investigates the relationship between demographic characteristics�
 - **Linear Regression:** A baseline approach assuming linear relationships.
 - **Decision Tree Regression:** Captures non-linear relationships but risks overfitting.
 - **Random Forest Regression:** Robust to non-linearities and interactions between demographic features.
-- **Stochastic Gradient Descent (SGD)** regression.
-- **Support Vector Regression (SVR)**.
-- **Neural Network (MLP)**.
+- **Stochastic Gradient Descent (SGD):** Efficiently optimizes models on large datasets by updating weights incrementally (more than 20,000 rows.
+- **Support Vector Regression (SVR):** Effectively captures nonlinear relationships using kernel tricks while being robust to outliers. Its ability to generalize well with limited data makes it a strong choice for complex regression tasks.
+- **Neural Network (MLP):** it can model complex nonlinear relationships using multiple layers and activation functions, making it effective for high-dimensional feature learning.
 
 ### Evaluation Metrics:
 - Root Mean Squared Error (RMSE)
 - R-squared (R²)
 
-Models evaluated using 10-fold cross-validation to prevent overfitting.
 
 ## 3. Evaluation Results
 
@@ -65,9 +64,9 @@ Models evaluated using 10-fold cross-validation to prevent overfitting.
 | Linear Regression             | High (~100)           | ~0.55 |
 | Decision Tree Regression     | Moderate RMSE, ~80       | Moderate R², ~0.6            |
 | Random Forest                | **Lowest RMSE**          | High R², ~0.7                |
-| SGD Regression               | High RMSE                | Low R²                       |
-| SVR                          | Moderate RMSE            | Moderate R², ~0.65           |
-| Neural Network (MLP)         | Moderate to High RMSE    | Moderate R², ~0.65           |
+| SGD Regression               | 93.15                | 0.6626                       |
+| SVR                          | 125.73            | 0.3852           |
+| Neural Network (MLP)         | 81.12    | 0.7441           |
 
 ## 3.1 Limitations of Modeling
 
@@ -83,10 +82,3 @@ Models evaluated using 10-fold cross-validation to prevent overfitting.
 ### Recommendations for Future Analysis:
 - Integrate additional demographic and socioeconomic data (e.g., education levels, employment status, healthcare access).
 - Perform analysis at finer resolutions (e.g., zip code level) to refine public health targeting and interventions.
-
----
-
-### Appendix (Separate Document):
-- Exploratory Data Analysis (EDA)
-- Detailed supplementary plots
-- Additional explored variables not central to primary analysis findings
