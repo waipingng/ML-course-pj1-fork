@@ -15,7 +15,7 @@ This analysis investigates the relationship between demographic characteristicsâ
   - Link: [wXXX](XXX)
   - Provides age-adjusted heart disease mortality rates at the county level.
 
-## 2. Data Collection and Documentation
+## 2.1 Data Collection and Documentation
 
 ### Data Collection Methods:
 - Demographic data sourced from the U.S. Census Bureau, primarily using decennial census data supplemented by the American Community Survey (ACS).
@@ -33,7 +33,16 @@ This analysis investigates the relationship between demographic characteristicsâ
 - Income data does not account for income inequality or detailed economic disparities within counties.
 - Missing mortality data in sparsely populated counties due to confidentiality restrictions.
 
-## 2. Modeling Approaches
+### Data Reproduction:
+- install additional package: pip install requirements.txt
+- run data cleaning and combine the income data from census to heart motality data: python code/data_comb.py, result is saved as merged_data.csv in cleaned_data folder
+- combine additional demographic data from census, such as gender and ethnicity to the abovementioned data: python code/data_comb_census.py, result is saved as merged_data_add in cleaned_data folder
+- run OLS model: python code/ols.py
+- run KNN model: python code/knn.py
+- run randomforest model: python code/randomforest_bestparameters.py
+- run other models and compare the predictions: python code/pred.py
+
+## 2.2 Modeling Approaches
 
 ### Models Explored:
 - **Linear Regression:** A baseline approach assuming linear relationships.
@@ -60,13 +69,13 @@ Models evaluated using 10-fold cross-validation to prevent overfitting.
 | SVR                          | Moderate RMSE            | Moderate RÂ², ~0.65           |
 | Neural Network (MLP)         | Moderate to High RMSE    | Moderate RÂ², ~0.65           |
 
-## 3. Limitations of Modeling
+## 3.1 Limitations of Modeling
 
 - Linear models failed to capture complex non-linear relationships.
 - Tree-based models, while performing well, may present interpretability challenges.
 - The neural network's complexity and potential overfitting were concerns given limited interpretability.
 
-## 3. Recommendations
+## 4. Recommendations
 
 ### Recommended Model:
 - **Random Forest Regression** is recommended due to the best overall balance between predictive accuracy (lowest RMSE and high RÂ² score) and interpretability, making it suitable for practical application in public health policy formulation.
