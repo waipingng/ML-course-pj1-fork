@@ -68,7 +68,7 @@ Using `reprocess.ipynb`
 | Linear Regression             | 95.99        | 0.6330 |
 | KNN Regression             | 124.96        | 0.3781 |
 | Decision Tree Regression     | 116.89      | 0.4558           |
-| Random Forest                | 105.25        | 0.5588              |
+| Random Forest                | 99.53        | 0.6054             |
 | SGD Regression               | 95.89                | 0.6338                       |
 | SVR                          | 123.27            | 0.3948           |
 | Neural Network (MLP)         | **84.81**    | **0.7135**           |
