@@ -1,11 +1,11 @@
 # Investigating the Relationship between Demographic Factors and Heart Disease Mortality
 
 # Goal of the project
----
+
 This analysis investigates the relationship between demographic characteristics—specifically income, ethnicity, and gender to predict heart disease mortality rates at the county level using the data in 2020. Understanding these relationships can guide targeted public health interventions aimed at reducing heart disease-related mortality.
 
 # Sources of the data
----
+
 ### Primary Data Sources:
 - **U.S. Census Bureau**
   - Link: [census.gov](https://www.census.gov/)
@@ -36,10 +36,9 @@ This analysis investigates the relationship between demographic characteristics�
 ## Data Reproduction
 - install additional package: pip install -r `requirements.txt`
 - run `reprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
-- run `pred.ipynb` file for all prediction results which are indivisually tuned.
+- run `pred.ipynb` file for all prediction results which are individually tuned.
 
 # Modeling Approaches
----
 ### Data Preprocessing
 Using `reprocess.ipynb`
 - Extracted only the necessary columns from the dataset and removed rows with missing values.
@@ -51,7 +50,8 @@ Using `reprocess.ipynb`
 
 - **Linear Regression:** Using `ols.ipynb` to serves as a baseline, assuming a linear relationship between features and the target variable.  
 - **Decision Tree Regression:** Based on `decision.ipynb` to captures non-linear patterns by recursively splitting the data based on feature values.  
-- **Random Forest Regression:** Enhances robustness by averaging multiple decision trees, reducing overfitting and capturing complex feature interactions. The optimal hyperparameters are tuned by the results from RandomSearchCV in  `randomforest_best_hyperparameters.ipynb`. Then use `optimal_randomforest_model.ipynb` to obtain RMSE and R-squared.
+-**KNN Regressor:** Using `knn.ipynb` to determine the optimal number of neighbors for regression.
+- **Random Forest Regression:** It enhances robustness by averaging multiple decision trees, reducing overfitting, and capturing complex feature interactions. The optimal hyperparameters are tuned using the results from `randomforest_best_hyperparameters.ipynb`. Then, `optimal_randomforest_model.ipynb` is used to obtain RMSE and R-squared for the random forest model.
 - **Stochastic Gradient Descent (SGD):** Efficiently optimizes models for large datasets (20,000+ rows) by updating weights incrementally.  
 - **Support Vector Regression (SVR):** Leverages kernel tricks to model non-linear relationships while remaining resilient to outliers, making it effective for limited data scenarios.  
 - **Neural Network (MLP):** Learns complex, high-dimensional patterns using multiple layers and activation functions, making it suitable for deep feature extraction.  
@@ -111,7 +111,7 @@ The scatter plot below compares the predicted values against the actual heart di
 The neural network (MLP) produced the most accurate predictions, followed by SGD and Linear Regression. This suggests that the strong performance of linear models indicates a direct correlation between income and mortality, reinforcing income as a key predictor of heart disease mortality rates.
 
 # Futher Research
----
+
 ### Recommended Model:
 - **Neural Network** is recommended due to the best overall balance between predictive accuracy (lowest RMSE and high R² score) and interpretability, making it suitable for practical application in public health policy formulation.
 
