@@ -75,7 +75,7 @@ This analysis investigates the relationship between demographic characteristics�
 ### **Model Performance Comparison**
 The following bar plots illustrate the performance of different models based on **R² Score**, **RMSE**, and **MAE**.
 
-![Model Comparison](../figure/Model%20comparison.png)
+![Model Comparison](./figure/Model%20comparison.png)
 
 - **R² Score**: Higher is better, indicating a better fit to the data.
 - **RMSE (Root Mean Squared Error)**: Lower is better, measuring prediction error magnitude.
@@ -87,20 +87,20 @@ The following bar plots illustrate the performance of different models based on 
 Feature importance was analyzed for **Linear Regression**, **SGD**, and **Random Forest Regression** to understand which features contributed the most to the model predictions.
 
 #### **Linear Regression**
-![Feature Importance - Linear Regression](../figure/Featureimportance%20for%20Linear%20Regression.png)
+![Feature Importance - Linear Regression](./figure/Feature%20importance%20for%20Linear%20Regression.png)
 
 #### **SGD Regression**
-![Feature Importance - SGD](../figure/Feature%20importance%20for%20SGD(new).png)
+![Feature Importance - SGD](./figure/Feature%20importance%20for%20SGD(new).png)
 
 #### **Random Forest Regression**
-![Feature Importance - Random Forest](../figure/Feature%20importance%20for%20Random%20Forest%20Regression.png)
+![Feature Importance - Random Forest](./figure/Feature%20importance%20for%20Random%20Forest%20Regression.png)
 
 ---
 
 ### **Predicted vs Actual Values**
-The scatter plot below compares the predicted values against the actual heart disease mortality rates for the best-performing model (**{best_model_name}**).
+The scatter plot below compares the predicted values against the actual heart disease mortality rates for the best-performing model (**Neural Network**).
 
-![Predicted vs Actual](../figure/predicted_vs_actual.png)
+![Predicted vs Actual](./figure/predicted_vs_actual.png)
 
 - The closer the points are to the red dashed line, the better the model's predictions align with actual values.
 
