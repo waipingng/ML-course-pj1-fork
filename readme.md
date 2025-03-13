@@ -1,10 +1,10 @@
 # Investigating the Relationship between Demographic Factors and Heart Disease Mortality
 
-# Goal of the project
+# Goal of the Project
 
 This analysis investigates the relationship between demographic characteristics—specifically income, ethnicity, and gender to predict heart disease mortality rates at the county level using the data in 2020. Understanding these relationships can guide targeted public health interventions aimed at reducing heart disease-related mortality.
 
-# Sources of the data
+# Data Sources
 
 ### Primary Data Sources:
 - **U.S. Census Bureau**
@@ -33,9 +33,9 @@ This analysis investigates the relationship between demographic characteristics�
 - Missing mortality data in sparsely populated counties due to confidentiality restrictions.
 
 
-## Data Reproduction
+### Data Reproduction
 - install additional package: pip install -r `requirements.txt`
-- run `reprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
+- run `preprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
 - run `pred.ipynb` file for obtaining the best prediction model among all prediction results which are individually tuned.
 
 # Modeling Approaches
@@ -60,7 +60,7 @@ Using `reprocess.ipynb`
 - Root Mean Squared Error (RMSE)
 - R-squared (R²)
 
-
+# **Model Evaluation and Results**
 ## Results
 
 | Model                      | RMSE (lower is better) | R² (higher is better) |
@@ -73,9 +73,9 @@ Using `reprocess.ipynb`
 | SVR                          | 123.27            | 0.3948           |
 | Neural Network (MLP)         | **84.81**    | **0.7135**           |
 
-# **Model Evaluation and Results**
+
 ---
-### **Model Performance Comparison**
+## Model Performance Comparison
 The following bar plots illustrate the performance of different models based on **R² Score**, **RMSE**, and **MAE**.
 
 ![Model Comparison](./figure/Model%20comparison.png)
@@ -86,16 +86,16 @@ The following bar plots illustrate the performance of different models based on 
 
 ---
 
-### **Feature Importance Analysis**
+## **Feature Importance Analysis**
 Feature importance was analyzed for **Linear Regression**, **SGD**, and **Random Forest Regression** to understand which features contributed the most to the model predictions.
 
-#### **Linear Regression**
+### **Linear Regression**
 ![Feature Importance - Linear Regression](./figure/Feature%20importance%20for%20Linear%20Regression.png)
 
-#### **SGD Regression**
+### **SGD Regression**
 ![Feature Importance - SGD](./figure/Feature%20importance%20for%20SGD(new).png)
 
-#### **Random Forest Regression**
+### **Random Forest Regression**
 ![Feature Importance - Random Forest](./figure/Feature%20importance%20for%20Random%20Forest%20Regression.png)
 
 ---
