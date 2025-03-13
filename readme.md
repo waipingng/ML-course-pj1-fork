@@ -1,4 +1,6 @@
-# Investigating the Relationship between Demographic Factors and Heart Disease Mortality
+# Investigating the Relationship between Demographic Factors and Heart Disease Mortality 
+
+members: Jihyung Park, Wai Ping Ng, Yu Chen Wang, Bowei Xia
 
 # Goal of the Project
 
