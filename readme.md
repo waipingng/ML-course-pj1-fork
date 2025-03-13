@@ -18,12 +18,12 @@ This analysis investigates the relationship between demographic characteristicsâ
 
 ### Data Collection Methods:
 - Demographic data sourced from the U.S. Census Bureau, primarily using decennial census data supplemented by the American Community Survey (ACS).
-- Heart disease mortality data sourced from U.S. Deapartment of Health & Human Services-Heart Disease Motality.
+- Heart disease mortality data sourced from U.S. Department of Health & Human Services-Heart Disease Mortality.
 
 ### Relevant Features:
-- **Income:** catergorial household income at the county level.
+- **Income:** categorial household income at the county level.
 - **Ethnicity:** Proportions of different ethnic groups within each county.
-- **Gender:** Gender composition, specifically the ratio of male to female residents in each county.
+- **Gender:** Gender composition, split rows into genders to determine which gender shows higher mortality.
 - **Heart Disease Mortality Rate:** Age-adjusted heart disease mortality per 100,000 population.
 
 ### Data Limitations:
@@ -34,7 +34,7 @@ This analysis investigates the relationship between demographic characteristicsâ
 
 
 ### Data Reproduction
-- install additional package: pip install -r `requirements.txt`
+- install the additional package: pip install -r `requirements.txt`
 - run `preprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
 - run `pred.ipynb` file for obtaining the best prediction model among all prediction results which are individually tuned.
 
