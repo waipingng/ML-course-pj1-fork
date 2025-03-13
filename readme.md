@@ -1,11 +1,11 @@
 # Investigating the Relationship between Demographic Factors and Heart Disease Mortality
 
 # Goal of the project
-
+---
 This analysis investigates the relationship between demographic characteristics—specifically income, ethnicity, and gender to predict heart disease mortality rates at the county level using the data in 2020. Understanding these relationships can guide targeted public health interventions aimed at reducing heart disease-related mortality.
 
-## Sources of the data
-
+# Sources of the data
+---
 ### Primary Data Sources:
 - **U.S. Census Bureau**
   - Link: [census.gov](https://www.census.gov/)
@@ -32,13 +32,14 @@ This analysis investigates the relationship between demographic characteristics�
 - Income data does not account for income inequality or detailed economic disparities within counties.
 - Missing mortality data in sparsely populated counties due to confidentiality restrictions.
 
-## Data Reproduction:
+
+## Data Reproduction
 - install additional package: pip install -r `requirements.txt`
 - run `reprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
 - run `pred.ipynb` file for all prediction results which are indivisually tuned.
 
-## Modeling Approaches
-
+# Modeling Approaches
+---
 ### Data Preprocessing
 Using `reprocess.ipynb`
 - Extracted only the necessary columns from the dataset and removed rows with missing values.
@@ -67,13 +68,13 @@ Using `reprocess.ipynb`
 | Linear Regression             | 95.99        | 0.6330 |
 | KNN Regression             | 124.96        | 0.3781 |
 | Decision Tree Regression     | 116.89      | 0.4558           |
-| Random Forest                | 105.25         | 0.5588               |
+| Random Forest                | 101.97         | 0.5830               |
 | SGD Regression               | 95.89                | 0.6338                       |
 | SVR                          | 123.27            | 0.3948           |
 | Neural Network (MLP)         | **84.81**    | **0.7135**           |
 
-## **Model Evaluation and Results**
-
+# **Model Evaluation and Results**
+---
 ### **Model Performance Comparison**
 The following bar plots illustrate the performance of different models based on **R² Score**, **RMSE**, and **MAE**.
 
@@ -109,8 +110,8 @@ The scatter plot below compares the predicted values against the actual heart di
 ### Interpretation
 The neural network (MLP) produced the most accurate predictions, followed by SGD and Linear Regression. This suggests that the strong performance of linear models indicates a direct correlation between income and mortality, reinforcing income as a key predictor of heart disease mortality rates.
 
-## Futher Research
-
+# Futher Research
+---
 ### Recommended Model:
 - **Neural Network** is recommended due to the best overall balance between predictive accuracy (lowest RMSE and high R² score) and interpretability, making it suitable for practical application in public health policy formulation.
 
