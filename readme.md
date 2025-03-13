@@ -40,7 +40,7 @@ This analysis investigates the relationship between demographic characteristicsâ
 
 # Modeling Approaches
 ### Data Preprocessing
-Using `reprocess.ipynb`
+Using `preprocess.ipynb`
 - Extracted only the necessary columns from the dataset and removed rows with missing values.
 - Merged the dataset with regional income distribution data to complete the dataset.
 - Applied one-hot encoding to categorical variables.
@@ -50,7 +50,7 @@ Using `reprocess.ipynb`
 
 - **Linear Regression:** Using `ols.ipynb` to serves as a baseline, assuming a linear relationship between features and the target variable.  
 - **Decision Tree Regression:** Based on `decision.ipynb` to captures non-linear patterns by recursively splitting the data based on feature values.  
--**KNN Regressor:** Using `knn.ipynb` to determine the optimal number of neighbors for regression.
+- **KNN Regressor:** Using `knn.ipynb` to determine the optimal number of neighbors for regression.
 - **Random Forest Regression:** It enhances robustness by averaging multiple decision trees, reducing overfitting, and capturing complex feature interactions. The optimal hyperparameters are tuned using the results from `randomforest_best_hyperparameters.ipynb`. Then, `optimal_randomforest_model.ipynb` is used to obtain RMSE and R-squared for the random forest model.
 - **Stochastic Gradient Descent (SGD):** Efficiently optimizes models for large datasets (20,000+ rows) by updating weights incrementally.  
 - **Support Vector Regression (SVR):** Leverages kernel tricks to model non-linear relationships while remaining resilient to outliers, making it effective for limited data scenarios.  
