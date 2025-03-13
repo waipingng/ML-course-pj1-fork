@@ -116,4 +116,7 @@ The neural network (MLP) produced the most accurate predictions, followed by SGD
 - Integrate additional demographic and socioeconomic data (e.g., education levels, employment status, healthcare access).
 - Perform analysis at finer resolutions (e.g., zip code level) to refine public health targeting and interventions.
 
+# Appeddix
+The Appendix Folder includes result of prediction using our best performed models.
+- In `regression_prediction.ipynb` we use the 2020's data to train the OLS prediction model. Using 2021's income data plays a role to prove our model cna be used in prediction. 
 
