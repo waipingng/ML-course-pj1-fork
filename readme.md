@@ -36,7 +36,7 @@ This analysis investigates the relationship between demographic characteristicsâ
 ## Data Reproduction
 - install additional package: pip install -r `requirements.txt`
 - run `reprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
-- run `pred.ipynb` file for all prediction results which are individually tuned.
+- run `pred.ipynb` file for obtaining the best prediction model among all prediction results which are individually tuned.
 
 # Modeling Approaches
 ### Data Preprocessing
