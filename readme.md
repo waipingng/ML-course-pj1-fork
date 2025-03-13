@@ -67,7 +67,7 @@ Running `pred.ipynb` file for obtaining the best prediction model among all pred
 | Decision Tree Regression     | 116.89      | 0.4558           |
 | Random Forest                | 99.53        | 0.6054             |
 | SGD Regression               | 95.89                | 0.6338                       |
-| SVR                          | 123.27            | 0.3948           |
+| Support Vector Regression              | 123.27            | 0.3948           |
 | Neural Network (MLP)         | **84.81**    | **0.7135**           |
 
 
