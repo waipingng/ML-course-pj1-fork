@@ -2,7 +2,7 @@
 
 # Investigating the Relationship between Demographic Factors and Heart Disease Mortality 
 
-Members: Jihyung Park, Wai Ping Ng, Yu Chen Wang, Bowei Xia
+Members: Jihyung Park, Wai Ping Ng, Yu-Chen Wang, Bowei Xia
 
 # Goal of the Project
 
