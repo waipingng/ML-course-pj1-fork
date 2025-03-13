@@ -34,17 +34,14 @@ This analysis investigates the relationship between demographic characteristicsâ
 
 
 ### Data Reproduction
+Extracted only the necessary columns from the dataset and removed rows with missing values. Then, merging the dataset with regional income distribution data to complete the dataset. Applied one-hot encoding to categorical variables. Scaled the remaining numerical features using a standard scaler for normalization.
 - install the additional package: pip install -r `requirements.txt`
 - run `preprocess.ipynb` file for all pre-processing data to convert the data to be ready for building models.
-- run `pred.ipynb` file for obtaining the best prediction model among all prediction results which are individually tuned.
+
 
 # Modeling Approaches
-### Data Preprocessing
-Using `preprocess.ipynb`
-- Extracted only the necessary columns from the dataset and removed rows with missing values.
-- Merged the dataset with regional income distribution data to complete the dataset.
-- Applied one-hot encoding to categorical variables.
-- Scaled the remaining numerical features using a standard scaler for normalization.
+### Model Constructing
+Running `pred.ipynb` file for obtaining the best prediction model among all prediction results which are individually tuned.
 
 ### Individual Models Explored
 
