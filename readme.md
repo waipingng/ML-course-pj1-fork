@@ -123,5 +123,5 @@ The neural network (MLP) produced the most accurate predictions, followed by SGD
 # Appendix
 The Appendix Folder includes result of prediction using our best performed models.
 - In `regression_prediction.ipynb` we use the 2020's data to train the OLS prediction model. Using 2021's income data plays a role to prove our model can be used in prediction. 
-- The result of OLS regreesion prediction model is in the cleaned _data folder, named `pred_future_data.csv`. The predicted mortality mght be overestimte since we only use 2021's income data for prediction but actually 2020's mortality may more in moraml year because the Covid-19 period.
+- The result of OLS regreesion prediction model is in the cleaned _data folder, named `pred_future_data.csv`. The predicted mortality mght be overestimte since we only use 2021's income data for prediction but actually 2020's mortality may more in noraml year because the Covid-19 period.
 
