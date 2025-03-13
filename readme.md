@@ -33,9 +33,9 @@ This analysis investigates the relationship between demographic characteristicsâ
 - Missing mortality data in sparsely populated counties due to confidentiality restrictions.
 
 ## Data Reproduction:
-- install additional package: pip install -r requirements.txt
-- run preprocess.ipynb file for all pre-processing data.
-- run pred.ipynb file for all prediction results.
+- install additional package: pip install -r `requirements.txt`
+- run `reprocess.ipynb` file for all pre-processing data to conevrt the data to be ready for building models.
+- run `pred.ipynb` file for all prediction results which are indivisually tuned.
 
 ## Modeling Approaches
 
@@ -46,9 +46,10 @@ This analysis investigates the relationship between demographic characteristicsâ
 - Scaled the remaining numerical features using a standard scaler for normalization.
 
 ### Models Explored
+
 - **Linear Regression:** Serves as a baseline, assuming a linear relationship between features and the target variable.  
 - **Decision Tree Regression:** Captures non-linear patterns by recursively splitting the data based on feature values.  
-- **Random Forest Regression:** Enhances robustness by averaging multiple decision trees, reducing overfitting and capturing complex feature interactions.  
+- **Random Forest Regression:** The optimal hyperparameters are tuned by the results from RandomSearchCV in  `randomforest_best_hyperparameters.ipynb` in worked folder. 
 - **Stochastic Gradient Descent (SGD):** Efficiently optimizes models for large datasets (20,000+ rows) by updating weights incrementally.  
 - **Support Vector Regression (SVR):** Leverages kernel tricks to model non-linear relationships while remaining resilient to outliers, making it effective for limited data scenarios.  
 - **Neural Network (MLP):** Learns complex, high-dimensional patterns using multiple layers and activation functions, making it suitable for deep feature extraction.  
