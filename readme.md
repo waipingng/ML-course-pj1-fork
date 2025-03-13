@@ -1,3 +1,5 @@
+![heart diseases mortality](./appendix/fs_heart_disease-medium.avif)
+
 # Investigating the Relationship between Demographic Factors and Heart Disease Mortality 
 
 Members: Jihyung Park, Wai Ping Ng, Yu Chen Wang, Bowei Xia
