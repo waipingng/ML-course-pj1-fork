@@ -63,11 +63,46 @@ This analysis investigates the relationship between demographic characteristics�
 | Model                      | RMSE (lower is better) | R² (higher is better) |
 |-----------------------------|-------------------------|-------------------------------|
 | Linear Regression             | 95.99        | 0.6330 |
+| KNN Regression             | 124.96        | 0.3781 |
 | Decision Tree Regression     | 116.89      | 0.4558           |
 | Random Forest                | 101.57         | 0.5891               |
 | SGD Regression               | 95.89                | 0.6338                       |
 | SVR                          | 123.27            | 0.3948           |
 | Neural Network (MLP)         | **84.81**    | **0.7135**           |
+
+## **Model Evaluation and Results**
+
+### **Model Performance Comparison**
+The following bar plots illustrate the performance of different models based on **R² Score**, **RMSE**, and **MAE**.
+
+![Model Comparison](../figure/Model%20comparison.png)
+
+- **R² Score**: Higher is better, indicating a better fit to the data.
+- **RMSE (Root Mean Squared Error)**: Lower is better, measuring prediction error magnitude.
+- **MAE (Mean Absolute Error)**: Lower is better, representing the average absolute error in predictions.
+
+---
+
+### **Feature Importance Analysis**
+Feature importance was analyzed for **Linear Regression**, **SGD**, and **Random Forest Regression** to understand which features contributed the most to the model predictions.
+
+#### **Linear Regression**
+![Feature Importance - Linear Regression](../figure/Featureimportance%20for%20Linear%20Regression.png)
+
+#### **SGD Regression**
+![Feature Importance - SGD](../figure/Feature%20importance%20for%20SGD(new).png)
+
+#### **Random Forest Regression**
+![Feature Importance - Random Forest](../figure/Feature%20importance%20for%20Random%20Forest%20Regression.png)
+
+---
+
+### **Predicted vs Actual Values**
+The scatter plot below compares the predicted values against the actual heart disease mortality rates for the best-performing model (**{best_model_name}**).
+
+![Predicted vs Actual](../figure/predicted_vs_actual.png)
+
+- The closer the points are to the red dashed line, the better the model's predictions align with actual values.
 
 ### Interpretation
 The neural network (MLP) produced the most accurate predictions, followed by SGD and Linear Regression. This suggests that the strong performance of linear models indicates a direct correlation between income and mortality, reinforcing income as a key predictor of heart disease mortality rates.
